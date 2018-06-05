@@ -2859,11 +2859,11 @@ q = 315274063651866931016337573625089033553
 <p>这里我们以 SCTF RSA1 为例进行介绍，首先解压压缩包后，得到如下文件</p>
 <div class="codehilite"><pre><span></span>➜  level0 git:<span class="o">(</span>master<span class="o">)</span> ✗ ls -al
 总用量 <span class="m">4</span>
-drwxrwxrwx <span class="m">1</span> root root    <span class="m">0</span> 7月  <span class="m">30</span> <span class="m">16</span>:36 .
-drwxrwxrwx <span class="m">1</span> root root    <span class="m">0</span> 7月  <span class="m">30</span> <span class="m">16</span>:34 ..
--rwxrwxrwx <span class="m">1</span> root root  <span class="m">349</span> 5月   <span class="m">2</span>  <span class="m">2016</span> level1.passwd.enc
--rwxrwxrwx <span class="m">1</span> root root <span class="m">2337</span> 5月   <span class="m">6</span>  <span class="m">2016</span> level1.zip
--rwxrwxrwx <span class="m">1</span> root root  <span class="m">451</span> 5月   <span class="m">2</span>  <span class="m">2016</span> public.key
+drwxrwxrwx <span class="m">1</span> root root    <span class="m">0</span> <span class="m">7</span>月  <span class="m">30</span> <span class="m">16</span>:36 .
+drwxrwxrwx <span class="m">1</span> root root    <span class="m">0</span> <span class="m">7</span>月  <span class="m">30</span> <span class="m">16</span>:34 ..
+-rwxrwxrwx <span class="m">1</span> root root  <span class="m">349</span> <span class="m">5</span>月   <span class="m">2</span>  <span class="m">2016</span> level1.passwd.enc
+-rwxrwxrwx <span class="m">1</span> root root <span class="m">2337</span> <span class="m">5</span>月   <span class="m">6</span>  <span class="m">2016</span> level1.zip
+-rwxrwxrwx <span class="m">1</span> root root  <span class="m">451</span> <span class="m">5</span>月   <span class="m">2</span>  <span class="m">2016</span> public.key
 </pre></div>
 
 <p>尝试解压缩了一下 level1.zip 现需要密码。然后根据 level1.passwd.enc 可知，应该是我们需要解密这个文件才能得到对应的密码。查看公钥</p>
